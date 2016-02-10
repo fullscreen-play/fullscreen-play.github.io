@@ -42,14 +42,28 @@
 // // $('window').scrollTop(1);
 
 // When ready...
-window.addEventListener("load",function() {
-	// Set a timeout...
-	setTimeout(function(){
-    console.log("yo");
-		// Hide the address bar!
-		window.scrollTo(0, 0);
-	}, 1000);
-});
+// window.addEventListener("load",function() {
+// 	// Set a timeout...
+// 	setTimeout(function(){
+//     console.log("yo");
+// 		// Hide the address bar!
+// 		window.scrollTo(0, 1);
+// 	}, 1000);
+// });
+/* Foundation v2.1.3 http://foundation.zurb.com */
+// jquery(document).ready(function () {
+//
+// 	/* Use this js doc for all application specific JS */
+//
+//     /* HIDE ADDRESS BAR ON IPHONE */
+//
+//     window.scrollTo(0,1);
+//
+// });
+
+function hideAddressBar() { window.scrollTo(0, 0); }
+
+addEventListener('load', function() { setTimeout(hideAddressBar, 0); }, false);
 // });
 // $('body').scrollTop(100);
 // $(function() {
