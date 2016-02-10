@@ -45,6 +45,7 @@
 window.addEventListener("load",function() {
 	// Set a timeout...
 	setTimeout(function(){
+    console.log("yo");
 		// Hide the address bar!
 		window.scrollTo(0, 1);
 	}, 0);
