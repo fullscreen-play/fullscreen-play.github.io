@@ -48,5 +48,14 @@ window.addEventListener("load",function() {
     console.log("yo");
 		// Hide the address bar!
 		window.scrollTo(0, 1);
-	}, 0);
+	}, 100);
 });
+// });
+// $('body').scrollTop(100);
+// $(function() {
+//     function orientationChange(e) {
+//         $("body").scrollTop(1);
+//     }
+//     $("body").css({ height: "+=300" }).scrollTop(1);
+//     $(window).bind("orientationchange", orientationChange);
+// });
