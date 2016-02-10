@@ -61,9 +61,9 @@
 //
 // });
 
-function hideAddressBar() { window.scrollTo(0, 0); }
-
-addEventListener('load', function() { setTimeout(hideAddressBar, 0); }, false);
+// function hideAddressBar() { window.scrollTo(0, 0); }
+//
+// addEventListener('load', function() { setTimeout(hideAddressBar, 0); }, false);
 // });
 // $('body').scrollTop(100);
 // $(function() {
