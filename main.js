@@ -1,22 +1,22 @@
 // window.scrollTo(0,1);
-//
-// console.log("yo");
 
-// // Find the right method, call on correct element
-// function launchIntoFullscreen(element) {
-//   if(element.requestFullscreen) {
-//     element.requestFullscreen();
-//   } else if(element.mozRequestFullScreen) {
-//     element.mozRequestFullScreen();
-//   } else if(element.webkitRequestFullscreen) {
-//     element.webkitRequestFullscreen();
-//   } else if(element.msRequestFullscreen) {
-//     element.msRequestFullscreen();
-//   }
-// }
-//
-// // Launch fullscreen for browsers that support it!
-// launchIntoFullscreen(document.documentElement); // the whole page
+console.log("yo");
+
+// Find the right method, call on correct element
+function launchIntoFullscreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchIntoFullscreen(document.documentElement); // the whole page
 (function(){
     function launchIntoFullscreen(element) {
         console.log("launchintofullscreen");
@@ -38,3 +38,5 @@
         $(document).blur();
     }, true);
 })();
+
+// $('window').scrollTop(1);
