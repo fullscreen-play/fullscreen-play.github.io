@@ -42,14 +42,14 @@
 // // $('window').scrollTop(1);
 
 // When ready...
-// window.addEventListener("load",function() {
-// 	// Set a timeout...
-// 	setTimeout(function(){
-//     console.log("yo");
-// 		// Hide the address bar!
-// 		window.scrollTo(0, 1);
-// 	}, 100);
-// });
+window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+    console.log("yo");
+		// Hide the address bar!
+		window.scrollTo(0, 0);
+	}, 1000);
+});
 // });
 // $('body').scrollTop(100);
 // $(function() {
@@ -59,18 +59,18 @@
 //     $("body").css({ height: "+=300" }).scrollTop(1);
 //     $(window).bind("orientationchange", orientationChange);
 // });
-function hideAddressBar()
-{
-  if(!window.location.hash)
-  {
-      if(document.height < window.outerHeight)
-      {
-          document.body.style.height = (window.outerHeight + 50) + 'px';
-      }
-
-      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
-  }
-}
-
-window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
-window.addEventListener("orientationchange", hideAddressBar );
+// function hideAddressBar()
+// {
+//   if(!window.location.hash)
+//   {
+//       if(document.height < window.outerHeight)
+//       {
+//           document.body.style.height = (window.outerHeight + 50) + 'px';
+//       }
+//
+//       setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+//   }
+// }
+//
+// window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+// window.addEventListener("orientationchange", hideAddressBar );
